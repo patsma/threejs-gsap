@@ -62,7 +62,7 @@ const tl = gsap.timeline({
     }
 })
 tl
-    .to('#mask *', {scaleY: '+=8', scaleX: '+=10', transformOrigin: 'center center'})
+    .to('#mask *', {scaleY: '+=22', scaleX: '+=22', transformOrigin: 'center center'})
     // .to('#mask > rect', {scaleY: '+=8', scaleX: '+=8', transformOrigin: 'center center'})
     // .to('#mask > rect', {scaleX: '+=14', transformOrigin: 'center center'},'-=0.4')
     .to('#Layer_1-2 > g > image', {
@@ -71,5 +71,5 @@ tl
         y: '+=10',
         transformOrigin: 'center center',
         ease: 'power1.out'
-    }, 0.1)
+    },'<')
 
